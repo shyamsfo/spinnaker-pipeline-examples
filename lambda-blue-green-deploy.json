@@ -1,0 +1,45 @@
+{
+  "$PREVIOUS": "$LATEST",
+  "account": "aws-managed-1",
+  "aliasName": "BlueGreenDemoAlias102",
+  "batchsize": 3,
+  "deploymentStrategy": "$BLUEGREEN",
+  "destroyOnFail": true,
+  "functionName": "a1-stack4-dt1-SalesforceDemo101",
+  "healthCheckType": "$LAMBDA",
+  "lambdaOutput": "{\"name\": \"Demo User\"}",
+  "lambdaPayload": "{\"key1\": \"value1\", \"key2\": \"value2\",\"key3\": \"value3\"}",
+  "name": "AWS Lambda Route",
+  "outputArtifact": {
+    "account": "embedded-artifact",
+    "artifact": {
+      "artifactAccount": "embedded-artifact",
+      "id": "da09c0e3-d86c-4789-a31d-b196ba941f5b",
+      "name": "ouptut",
+      "reference": "eyJuYW1lIjogIkRlbW8gVXNlciJ9",
+      "type": "embedded/base64"
+    }
+  },
+  "payloadArtifact": {
+    "account": "embedded-artifact",
+    "artifact": {
+      "artifactAccount": "embedded-artifact",
+      "id": "1aa99b96-8b43-4730-b59f-14fbcc99f6f1",
+      "name": "input",
+      "reference": "eyJuYW1lIjogIkRlbW8gVXNlciJ9",
+      "type": "embedded/base64"
+    }
+  },
+  "provisionedConcurrentExecutions": 0,
+  "region": "us-west-2",
+  "timeout": 45,
+  "trafficPercentA": 83,
+  "triggerArns": [
+    "arn:aws:sqs:us-west-2:222014522391:lambda_queue_4"
+  ],
+  "type": "Aws.LambdaTrafficRoutingStage",
+  "versionNameA": "$LATEST",
+  "versionNameB": "$PREVIOUS",
+  "versionNumberA": "6",
+  "versionNumberB": "2"
+}

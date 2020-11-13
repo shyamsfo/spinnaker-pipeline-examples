@@ -1,0 +1,10 @@
+{
+  "account": "aws-managed-1",
+  "functionName": "a1-stack1-detail1-WednesdayDemo101",
+  "name": "AWS Lambda Destroy",
+  "region": "us-west-2",
+  "retentionNumber": 4,
+  "type": "Aws.LambdaDeleteStage",
+  "version": "$MOVING",
+  "versionNumber": "1"
+}

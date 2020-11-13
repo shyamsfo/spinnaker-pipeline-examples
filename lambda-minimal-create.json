@@ -1,0 +1,58 @@
+{
+  "keepWaitingPipelines": false,
+  "lastModifiedBy": "anonymous",
+  "limitConcurrent": true,
+  "parameterConfig": [],
+  "spelEvaluator": "v4",
+  "stages": [
+    {
+      "KMSKeyArn": "",
+      "account": "aws-managed-1",
+      "aliases": [],
+      "batchsize": 3,
+      "cloudProvider": "aws",
+      "credentials": "",
+      "deadLetterConfig": {
+        "targetArn": ""
+      },
+      "describeName": "detail2",
+      "description": "A minimal Lambda created from spinnaker",
+      "detailName": "detail1",
+      "distributionId": "E2XIM7A1C4QYGW",
+      "edgeEnabled": true,
+      "envVariables": {},
+      "eventType": "ViewerRequest",
+      "functionName": "a1-stack1-detail1-lambda-name-001",
+      "functionUid": "lambda-name-001",
+      "handler": "json_simple_lambda.entry_point",
+      "includeBody": true,
+      "layers": [],
+      "memory": 256,
+      "memorySize": 128,
+      "name": "The Daily Build",
+      "operation": "",
+      "publish": true,
+      "refId": "1",
+      "region": "us-west-2",
+      "requisiteStageRefIds": [],
+      "reservedConcurrentExecutions": 3,
+      "role": "arn:aws:iam::account_num:role/lambda-role",
+      "runtime": "python3.8",
+      "s3bucket": "fill_bucket",
+      "s3key": "lambda/simple-json-function/simple_json_lambda_v3.zip",
+      "securityGroupIds": [],
+      "stackName": "stack1",
+      "subnetIds": [],
+      "tags": {},
+      "targetGroups": "",
+      "timeout": 60,
+      "tracingConfig": {
+        "mode": "PassThrough"
+      },
+      "triggerArns": [],
+      "type": "Aws.LambdaDeploymentStage"
+    }
+  ],
+  "triggers": [],
+  "updateTs": "1605272877000"
+}

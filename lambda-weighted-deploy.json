@@ -1,0 +1,14 @@
+{
+  "account": "aws-managed-1",
+  "aliasName": "Alias103",
+  "batchsize": 1,
+  "deploymentStrategy": "$WEIGHTED",
+  "functionName": "a1-stack4-dt1-WednesdayDemo101",
+  "name": "AWS Lambda Route",
+  "provisionedConcurrentExecutions": 0,
+  "region": "us-west-2",
+  "trafficPercentA": 90,
+  "type": "Aws.LambdaTrafficRoutingStage",
+  "versionNameA": "$LATEST",
+  "versionNameB": "$PREVIOUS"
+}

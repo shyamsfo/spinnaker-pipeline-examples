@@ -1,0 +1,16 @@
+{
+  "account": "aws-managed-1",
+  "aliasName": "Alias101",
+  "batchsize": 3,
+  "deploymentStrategy": "$SIMPLE",
+  "functionName": "a1-stack4-dt1-MondayDemo101",
+  "name": "AWS Lambda Route",
+  "provisionedConcurrentExecutions": 2,
+  "region": "us-west-2",
+  "trafficPercentA": 100,
+  "triggerArns": [
+    "arn:aws:dynamodb:us-west-2:222014522391:table/BarkTable/stream/2020-11-12T18:31:57.101"
+  ],
+  "type": "Aws.LambdaTrafficRoutingStage",
+  "versionNameA": "$LATEST"
+}

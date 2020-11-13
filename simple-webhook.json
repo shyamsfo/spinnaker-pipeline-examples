@@ -1,0 +1,38 @@
+{
+  "keepWaitingPipelines": false,
+  "lastModifiedBy": "anonymous",
+  "limitConcurrent": true,
+  "parameterConfig": [],
+  "spelEvaluator": "v4",
+  "stages": [
+    {
+      "method": "GET",
+      "name": "GetJoke",
+      "refId": "1",
+      "requisiteStageRefIds": [],
+      "statusJsonPath": "type",
+      "statusUrlResolution": "webhookResponse",
+      "successStatuses": "success",
+      "type": "webhook",
+      "url": "https://api.icndb.com/jokes/random",
+      "waitForCompletion": false
+    },
+    {
+      "failOnFailedExpressions": true,
+      "name": "Evaluate Variables",
+      "refId": "2",
+      "requisiteStageRefIds": [
+        "1"
+      ],
+      "type": "evaluateVariables",
+      "variables": [
+        {
+          "key": "joke",
+          "value": "${#stage(\"GetJoke\").context.webhook.body.value.joke}"
+        }
+      ]
+    }
+  ],
+  "triggers": [],
+  "updateTs": "1605271678000"
+}

@@ -1,0 +1,32 @@
+{
+  "keepWaitingPipelines": false,
+  "lastModifiedBy": "anonymous",
+  "limitConcurrent": true,
+  "spelEvaluator": "v4",
+  "stages": [
+    {
+      "account": "aws-managed-1",
+      "aliasName": "",
+      "executionCount": 3,
+      "functionName": "a1-stack1-detail1-WednesdayDemo101",
+      "name": "AWS Lambda Invoke",
+      "payloadArtifact": {
+        "account": "embedded-artifact",
+        "artifact": {
+          "artifactAccount": "embedded-artifact",
+          "id": "4f24ed06-d9aa-4a6d-926e-f356aa664373",
+          "name": "art-111",
+          "reference": "ewogICJrZXkxIjogInZhbHVlMSIsCiAgImtleTIiOiAidmFsdWUyIiwKICAia2V5MyI6ICJ2YWx1ZTMiCn0=",
+          "type": "embedded/base64"
+        }
+      },
+      "refId": "2",
+      "region": "us-west-2",
+      "requisiteStageRefIds": [],
+      "timeout": 30,
+      "type": "Aws.LambdaInvokeStage"
+    }
+  ],
+  "triggers": [],
+  "updateTs": "1605128819000"
+}
